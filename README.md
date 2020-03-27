@@ -1,4 +1,4 @@
-# _**Indigo_client**_
+# _**Indigo Client**_
 
 This is the front end for the Indigo application.
 
@@ -30,20 +30,27 @@ Then run
 
 This is build the project and open the react project in localhost:3000 
 
- ### To start use 
+ ## Running locally through command line
  ~~~
+ npm install
  npm run start
  ~~~
 
- ### Runnning using Docker container
+ ## Runnning using Docker container
 
 Docker should be installed and the should be running already
 Use 'sudo' if required
 
 ~~~
-$ docker build -t indigoClient . // builds the docker image with the tag name indigo:latest
-$ docker run -p 8080:8080 -t indigoClient //Deploys the image in a docker container
+$ docker build -t indigo_client . // builds the docker image with the tag name indigo:latest
+$ docker run -p 3000:8080 -t indigo_client //Deploys the image in a docker container
 ~~~
+Maps the 3000 port in docker container to 8080 port in the DockerHost or the fromt end
+
 
 ## Learning goals:
- - axios(communication), communication between docker containers, RESTful call, Hot reloading in docker.
+  - axios(communication)
+  - communication between docker containers(docker-compose)
+  - RESTful call(or calls between containers)
+  - Hot reloading in docker.
+  - Frontend testing

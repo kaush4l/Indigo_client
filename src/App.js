@@ -5,18 +5,18 @@ import Footer from './Components/Footer'
 import './App.css'
 
 class App extends Component {
-  render() {
-    return (
-      <div>
-        <div className='App-header'>
-          <Header />
-        </div>
-        <div className='App-footer'>
-          <Footer />
-        </div>
-      </div>
-    )
-  }
+    render() {
+        return (
+            <div>
+                <div className='App-header'>
+                    <Header />
+                </div>
+                <div className='App-footer'>
+                    <Footer />
+                </div>
+            </div>
+        )
+    }
 }
 
 export default App
